@@ -1,0 +1,45 @@
+{
+  "name": "claude-devtools-panel",
+  "displayName": "Claude DevTools Panel",
+  "description": "Embed Claude DevTools as a tab inside Cursor",
+  "version": "0.3.0",
+  "publisher": "pavelpilyak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavelpilyak/claude-devtools-vscode-extension.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "icon": "images/icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-devtools-panel.open",
+        "title": "Claude DevTools: Open",
+        "icon": {
+          "light": "images/icon.png",
+          "dark": "images/icon.png"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
