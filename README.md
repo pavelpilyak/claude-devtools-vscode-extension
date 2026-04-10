@@ -35,6 +35,8 @@ Claude DevTools includes a built-in HTTP server (Fastify on `localhost:3456`). T
 
 No API keys or network access required — it reads session logs from `~/.claude/` on your machine.
 
+Claude DevTools must be run separately.
+
 ## Credits
 
 This extension is just a thin wrapper around [matt1398/claude-devtools](https://github.com/matt1398/claude-devtools) — all the actual visualization work is theirs. Go star their repo.
