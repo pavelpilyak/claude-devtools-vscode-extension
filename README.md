@@ -4,6 +4,8 @@ Embed [Claude DevTools](https://github.com/matt1398/claude-devtools) as a tab in
 
 Claude DevTools visualizes your Claude Code sessions — file operations, token usage, tool calls, subagent traces, and more.
 
+![Screenshot](screenshot.png)
+
 ## Prerequisites
 
 - **macOS** (Windows/Linux not yet supported)
@@ -34,6 +36,10 @@ The extension auto-configures the Claude DevTools HTTP server on first run and l
 Claude DevTools includes a built-in HTTP server (Fastify on `localhost:3456`). The extension enables it via `~/.claude/claude-devtools-config.json` and loads the UI in a webview iframe.
 
 No API keys or network access required — it reads session logs from `~/.claude/` on your machine.
+
+## Troubleshooting
+
+If you see an error saying Claude DevTools is not running even though it was open before, **fully quit** Claude DevTools (`Cmd+Q`) and reopen it. The HTTP server sometimes doesn't start if the app was launched before the config was created by this extension.
 
 Claude DevTools must be run separately.
 
